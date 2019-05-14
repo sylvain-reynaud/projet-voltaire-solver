@@ -3,7 +3,7 @@ Programme pour tricher aux exercices de projet-voltaire.fr
 
 ### Vidéo exemple
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/npYn8sG4pmA/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/npYn8sG4pmA)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/npYn8sG4pmA/0.jpg)](https://www.youtube.com/watch?v=npYn8sG4pmA)
 
 ## Comment l'utiliser
 

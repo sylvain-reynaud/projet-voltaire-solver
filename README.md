@@ -1,6 +1,10 @@
 # Projet Voltaire Solver
 Programme pour tricher aux exercices de projet-voltaire.fr
 
+### Vidéo exemple
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/npYn8sG4pmA/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/npYn8sG4pmA)
+
 ## Comment l'utiliser
 
 ### Installer les dépendances :
@@ -17,3 +21,4 @@ pip install termcolor json
 4. Cliquer sur la 2ème ligne appelée "WolLearningContentWebService"
 5. Copier le contenu du sous-onglet Réponse/Response dans un fichier appelé "data.txt" dans le même dossier que le script python
 6. Lancer le script et copier-coller les phrases que vous donne l'exercice
+

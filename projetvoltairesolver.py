@@ -12,9 +12,12 @@ for filename in os.listdir(directory):
     if filename.endswith(data_filename):
     	with open(filename, 'r', encoding="utf-8") as f:
     		data = f.read()
-    		data = data[data.index("[\"java.util.ArrayList"):data.index("]")] + "]"
-			data = data.replace("\\", "\\\\")
-			reponses += json.loads(data)
+    		try:
+	    		data = data[data.index("[\"java.util.ArrayList"):data.index("]")] + "]"
+				data = data.replace("\\", "\\\\")
+				reponses += json.loads(data)
+			except:
+				pass
 
 reponses = [x for x in reponses if "\\x3C" in x]
         

@@ -3,16 +3,21 @@ import difflib
 import re
 from urllib.parse import unquote
 from termcolor import colored
+import os
 
 data_filename = "data.txt"
-with open(data_filename, 'r', encoding="utf-8") as f:
-    data = f.read()
+reponses = []
 
-data = data[data.index("[\"java.util.ArrayList"):data.index("]")] + "]"
-data = data.replace("\\", "\\\\")
-reponses = json.loads(data)
+for filename in os.listdir(directory):
+    if filename.endswith(data_filename):
+    	with open(filename, 'r', encoding="utf-8") as f:
+    		data = f.read()
+    		data = data[data.index("[\"java.util.ArrayList"):data.index("]")] + "]"
+			data = data.replace("\\", "\\\\")
+			reponses += json.loads(data)
+
 reponses = [x for x in reponses if "\\x3C" in x]
-
+        
 
 while(1):
     phrase = input("Entrer la phrase donnee : ")
